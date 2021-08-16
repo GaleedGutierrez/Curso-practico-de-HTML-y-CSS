@@ -1,0 +1,108 @@
+:root {
+    --color-font-header: #70757a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.material-icons {
+    font-size: 2.4rem;
+    color: var(--color-font-header);
+}
+
+.header {
+    width: 100vw;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-left {
+    width: 20rem;
+    height: 100%;
+    display: grid;
+}
+
+.header__nav-right {
+    width: 10.5rem;
+}
+
+.header__nav-left--ul,
+.header__nav-right--ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-left__ul--a {
+    font-size: 1.2rem;
+    color: var(--color-font-header);
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left__ul--a:focus {
+    border-bottom: 0.2rem solid rgb(66, 133, 244);
+    color: rgb(66, 133, 244);
+}
+
+a.header__nav-right--app {
+    font-size: 2.5rem;
+    padding: 0.6rem;
+}
+
+.header__nav-right--app:focus {
+    padding: 0.6rem;
+    background-color: rgba(60, 64, 67, 0.12);
+    border-radius: 50%;
+}
+
+a.header__nav-right--account-icon {
+    font-size: 3.4rem;
+}
+
+.header__nav-right--account-icon:focus {
+    background-color: rgba(60, 64, 67, 0.12);
+    border-radius: 50%;
+}
+
+.app-window__google-apps {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.app-window__google-apps a{
+    font-size: 3.2rem;
+}
+
+.app-window__google-apps figure {
+    width: 3.2rem;
+}
