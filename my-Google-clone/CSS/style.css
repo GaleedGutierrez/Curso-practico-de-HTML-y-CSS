@@ -25,6 +25,7 @@ figure {
 
 img {
     width: 100%;
+    font-size: 1rem;
 }
 
 .material-icons {
@@ -95,11 +96,12 @@ a.header__nav-right--account-icon {
     position: absolute;
     top: 4.4rem;
     right: 0;
-    left: 2.7rem;
+    left: auto;
     bottom: 0;
-    width: 90%;
+    width: 28.6rem;
     height: 50%;
-    /* display: none; */
+    margin-right: 0.8rem;
+    display: none;
     background-color: #fff;
     border: 1px rgba(0, 0, 0, 0.2) solid;
     box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
@@ -112,7 +114,7 @@ a.header__nav-right--account-icon {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 1rem 1rem 1.5rem;
+    padding: 1rem 1.2rem 1.5rem 0;
 }
 
 .app-window__google-apps p {
@@ -140,6 +142,7 @@ a.header__nav-right--account-icon {
 .app-window__google-apps figure {
     width: 3.2rem;
     margin-bottom: 0.9rem;
+    height: 100%;
 }
 
 .app-window__google-apps--a {
@@ -151,6 +154,81 @@ a.header__nav-right--account-icon {
 }
 
 .header__nav-right--app:focus + .app-window {
-    display: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
+.linea-de-separacion {
+    border-top: 0.1rem rgba(0, 0, 0, 0.2) solid;
+    width: 95%;
+    display: inline-block;
+}
+
+.opcion-account {
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.opcion-account p,
+.opcion-account__footer a  {
+    font-family: 'Spartan', sans-serif;
+}
+
+a.opcion-account--account-icon {
+    font-size: 8rem;
+}
+
+.opcion-account__camera-icon {
+    position: absolute;
+    top: 5rem;
+    left: 17.2rem;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%); */
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.opcion-account__camera-icon .opcion-account__camera-icon--a {
+    font-size: 1.8rem;
+    border-radius: 100%;
+    box-sizing: content-box;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 0.3rem;
+}
+
+.opcion-account__nombre-de-usuario {
+    font-weight: 600;
+}
+
+.opcion-account__email-usuario {
+    font-size: 1.4rem;
+    color: #5f6368;
+}
+
+.opcion-account__admin-cuenta {
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: content-box;
+    border: 1px solid #dadce0;
+    border-radius: 18px;
+    padding: 0.75rem 1.6rem;
+}
+
+.opcion-account__other-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
