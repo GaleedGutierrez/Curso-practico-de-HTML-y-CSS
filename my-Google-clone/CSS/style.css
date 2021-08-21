@@ -64,6 +64,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 4.8rem;
 }
 
 .nav-left__ul--a {
