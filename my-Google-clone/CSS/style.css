@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2ebf5c2eb39667d26c6254911c6fd1d4f2f3c3f
 :root {
     --color-font-header: #70757a;
 }
@@ -233,6 +236,8 @@ a.opcion-account--account-icon {
     align-items: center;
     justify-content: center;
 }
+<<<<<<< HEAD
+=======
 =======
 :root {
     --color-font-header: #70757a;
@@ -688,3 +693,4 @@ a.footer__more-information--container-com-busqueda {
     display: flex;
 }
 >>>>>>> e39e8373f535df525be8125e60467f85daff3864
+>>>>>>> b2ebf5c2eb39667d26c6254911c6fd1d4f2f3c3f
