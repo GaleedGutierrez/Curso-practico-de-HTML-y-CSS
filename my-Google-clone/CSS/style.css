@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b2ebf5c2eb39667d26c6254911c6fd1d4f2f3c3f
 :root {
     --color-font-header: #70757a;
 }
@@ -232,3 +236,461 @@ a.opcion-account--account-icon {
     align-items: center;
     justify-content: center;
 }
+<<<<<<< HEAD
+=======
+=======
+:root {
+    --color-font-header: #70757a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+.body-center {
+    /* display: flex;
+    flex-flow: column nowrap; */
+    height: 100%;
+}
+
+figure {
+    display: grid;
+}
+
+img {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.material-icons {
+    font-size: 2.4rem;
+    color: var(--color-font-header);
+}
+
+.header {
+    width: 100%;
+    min-height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-left {
+    width: 20rem;
+    height: 100%;
+    display: grid;
+}
+
+.header__nav-right {
+    width: 10.5rem;
+}
+
+.header__nav-left--ul,
+.header__nav-right--ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-left__ul--a {
+    font-size: 1.2rem;
+    color: var(--color-font-header);
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left__ul--a:focus {
+    border-bottom: 0.2rem solid rgb(66, 133, 244);
+    color: rgb(66, 133, 244);
+}
+
+a.header__nav-right--app {
+    font-size: 2.5rem;
+    padding: 0.6rem;
+}
+
+.header__nav-right--app:focus {
+    padding: 0.6rem;
+    background-color: rgba(60, 64, 67, 0.12);
+    border-radius: 50%;
+}
+
+a.header__nav-right--account-icon {
+    font-size: 3.4rem;
+}
+
+.header__nav-right--account-icon:focus {
+    background-color: rgba(60, 64, 67, 0.12);
+    border-radius: 50%;
+}
+
+.header__nav-right--imagenes,
+.header__nav-right--gmail {
+    display: none;
+}
+
+
+.app-window {
+    position: absolute;
+    top: 4.4rem;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    width: 28.6rem;
+    height: 50%;
+    margin-right: 0.8rem;
+    display: none;
+    background-color: #fff;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.app-window__google-apps {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem 1.2rem 1.5rem 0;
+}
+
+.app-window__google-apps p {
+    font-size: 1.4rem;
+}
+
+.google-apps__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8.6rem;
+}
+
+.google-apps__container--div-vacio {
+    width: 7.2rem;
+    height: 3.2rem;
+}
+
+.app-window__google-apps div a {
+    font-size: 3.8rem;
+    width: 7.2rem;
+}
+
+.app-window__google-apps figure {
+    width: 3.2rem;
+    margin-bottom: 0.9rem;
+    height: 100%;
+}
+
+.app-window__google-apps--a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.header__nav-right--app:focus + .app-window {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.linea-de-separacion {
+    border-top: 0.1rem rgba(0, 0, 0, 0.2) solid;
+    width: 95%;
+    display: inline-block;
+}
+
+.opcion-account {
+    position: absolute;
+    left: auto;
+    top: 4.4rem;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 28.6rem; 
+    height: 50%;
+    max-height: 26.2rem;
+    background-color: #fff;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 10px;
+    box-sizing: content-box;
+    padding: 0.2rem 0.3rem 1rem 0.3rem;
+    margin-right: 0.8rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header__nav-right--account-icon:focus + .opcion-account {
+    display: flex;
+}
+
+.opcion-account p,
+.opcion-account__footer a {
+    font-family: "Spartan", sans-serif;
+}
+
+.opcion-account--account {
+    display: inline-block;
+    height: 8rem;
+    margin-bottom: 0.8rem;
+}
+
+a.opcion-account--account-icon {
+    font-size: 8rem;
+}
+
+.opcion-account__camera-icon {
+    position: relative;
+    bottom: 3.4rem;
+    left: 65%;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%); */
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.opcion-account__camera-icon .opcion-account__camera-icon--a {
+    font-size: 1.8rem;
+    border-radius: 100%;
+    box-sizing: content-box;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 0.3rem;
+}
+
+.opcion-account__nombre-de-usuario {
+    font-weight: 600;
+    color: #3c4043;
+}
+
+.opcion-account__email-usuario {
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    color: #5f6368;
+}
+
+.opcion-account__admin-cuenta {
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: content-box;
+    border: 1px solid #dadce0;
+    border-radius: 18px;
+    padding: 0.75rem 1.6rem;
+    color: #3c4043;
+    margin: 1rem 0;
+}
+
+.opcion-account__other-account--a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+span.opcion-account__other-account--icon {
+    font-size: 2rem;
+}
+
+.opcion-account__other-account--p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.opcion-account__footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.opcion-account__footer--a {
+    font-size: 1.2rem;
+    color: #3c4043;
+}
+
+.opcion-account__footer--a-1 {
+    margin: 1.2rem 0 1rem;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 7rem;
+    margin-bottom: 10%;
+    height: 78vh;
+    min-height: 37.7rem;
+}
+
+.main__form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-height: 58.2rem;
+}
+
+.main--google-logo {
+    width: 16rem;
+}
+
+.main__search-bar {
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dadce0;
+    border-radius: 30px;
+    width: 90vw;
+    max-width: 58.2rem;
+    margin-top: 4.2rem;
+    padding: 0.7rem 1rem;
+}
+
+
+.main__search-bar--search-bar {
+    border: none;
+    height: 2.5rem;
+    width: 79%;
+}
+
+.main__form-buttons {
+    display: none;
+}
+
+.main__search-bar--search-bar:focus-visible {
+    outline: none;
+}
+
+.main__change-language {
+    display: flex;
+    margin-top: 2.3rem;
+    font-size: 1.3rem;
+    /* flex-flow: row nowrap;
+    width: 100%; */
+}
+
+.main__change-languag--languaje {
+    margin-left: 0.5rem;
+    color: #1967d2;
+    font-size: 1.3rem;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    color: rgba(0,0,0,.54);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: space-around;
+    box-sizing: content-box;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    /* max-height: 9rem; */
+}
+
+.footer__country {
+    padding: 1rem 0 1rem 1.5rem;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer__more-information {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer__more-information--container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0;
+    font-size: 1.3rem;
+}
+
+.footer__more-information--container a {
+    width: 19rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(0,0,0,.54);
+}
+
+a.footer__more-information--container-com-busqueda {
+    display: none;
+}
+
+.footer__more-information--container-preferencias {
+    width: 19rem;
+    height: 1.5rem;
+}
+
+.footer__more-information--container-preferencias a{
+    width: auto;
+}
+
+.more-information__container-preferencias--more-settings {
+    display: none;   
+    position: relative;
+    bottom: 36.5rem;
+    background-color: #fff;
+    height: 33.6rem;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+        0px 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin-left: 0.8rem;
+    /* margin-top: 7.8rem; */
+}
+
+.more-information__container-preferencias--more-settings-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.more-information__container-preferencias--more-settings-ul-li {
+    height: 4.8rem;
+    text-align: center;
+}
+
+.more-information__container-preferencias--more-settings-ul-li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer__more-information--container-preferencias a:focus + .more-information__container-preferencias--more-settings {
+    display: flex;
+}
+>>>>>>> e39e8373f535df525be8125e60467f85daff3864
+>>>>>>> b2ebf5c2eb39667d26c6254911c6fd1d4f2f3c3f

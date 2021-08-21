@@ -1,0 +1,115 @@
+.header {
+    justify-content: flex-end;
+}
+
+.header__nav-left {
+    display: none;
+}
+
+.header__nav-right {
+    width: 23.205rem;
+}
+
+.header__nav-right--imagenes,
+.header__nav-right--gmail {
+    display: initial;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.main {
+    height: 76vh;
+    padding-top: 10%;
+}
+
+.main--google-logo {
+    width: 21.6rem;
+}
+
+.main__search-bar {
+    height: 4.4rem;
+}
+
+.main__search-bar--search-bar {
+    height: 3.4rem;
+}
+
+.main__form-buttons {
+    display: initial;
+    margin: 1.8rem 0 2.5rem;
+    height: 3.6rem;
+    /* display: flex;
+    flex-flow: row nowrap;
+    align-items: center; */
+}
+
+.main__form-buttons--botton {
+    min-width: 54px;
+    text-align: center;
+    margin: 1.1rem 0.4rem;
+    height: 100%;
+    padding: 0 1.6rem;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main__form-buttons--botton:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+.footer__more-information {
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.footer__more-information--container {
+    width: 40%;
+}
+
+.footer__more-information--container-pre-bus-priv {
+    order: 1;
+    justify-content: flex-end;
+}
+
+.footer__more-information--container-preferencias {
+    order: 1;
+    width: fit-content;
+    max-width: 10.269rem;
+}
+
+.more-information__container-preferencias--more-settings {
+    /* position: absolute; */
+    /* bottom: 0; */
+    right: 11.6rem;
+    /* left: 0; */
+    /* top: 0; */
+    margin-right: 0.8rem;
+    margin-left: 0;
+    width: 21.1rem;
+}
+
+.footer__more-information--container a {
+    width: auto;
+    padding: 0 1.5rem;
+}
+/* 
+a.footer__more-information--container-preferencias-a {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.footer__more-information--container-three-opctions {
+    width: 60%;
+    justify-content: flex-start;
+}
+
+a.footer__more-information--container-com-busqueda {
+    display: initial;
+}
