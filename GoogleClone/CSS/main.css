@@ -62,3 +62,14 @@ img {
 .header__profile-li .header__profile-icon {
     font-size: 3.2rem;
 }
+
+.main {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.main-logo {
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
