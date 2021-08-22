@@ -1,3 +1,7 @@
+:root {
+    --color-input-search: #dfe1e5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -68,8 +72,30 @@ img {
     text-align: center;
 }
 
-.main-logo {
+.main__main-logo {
     width: 30rem;
     margin: 0 auto;
     margin-bottom: 3.5rem;
+}
+
+.main__main-input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.main__input-container {
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: 1px var(--color-input-search) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__input-search {
+    width: 45rem;
+    height: 4rem;
+    border: none;
+    outline: none;
 }
