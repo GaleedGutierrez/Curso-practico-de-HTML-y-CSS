@@ -1,9 +1,13 @@
 :root {
+    --color-a-header: rgba(0,0,0,0.87);
     --color-border-input-search: #dfe1e5;
     --color-input-search-hover: #20212447;
     --color-border-search-hover: #dfe1e500;
     --color-icon-header: #5f6368;
     --color-icon-search-bar: #9aa0a6;
+    --color-buttons: #f2f2f2;
+    --color-buttons-hover: #dadce0;
+    --color-buttons-font: #202124;
 }
 
 * {
@@ -48,6 +52,10 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.ul__a--color_gray {
+    color: var(--color-a-header);
 }
 
 /* .header__menu-icon {
@@ -129,4 +137,32 @@ img {
 .input-container__search-icon,
 .input-container__micro-icon {
     color: var(--color-icon-search-bar);
+}
+
+.main__main-buttons {
+    width: 36rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.main-buttons__container {
+    display: inline-block;
+}
+
+.main-bottons__button {
+    height: 3.6rem;
+    background-color: var(--color-buttons);
+    border: none;
+    font-size: 1.4rem;
+    color: var(--color-icon-header);
+    border-radius: 5px;
+    padding: 0 1.5rem;
+    /* margin-right: 1.5rem; */
+}
+
+.main-bottons__button:hover {
+    border: 1px solid var(--color-buttons-hover);
+    box-shadow: 0 1px 1px var(--color-buttons-hover);
+    color: var(--color-buttons-font);
 }
