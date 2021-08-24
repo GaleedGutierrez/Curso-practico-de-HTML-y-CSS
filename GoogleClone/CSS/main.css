@@ -189,7 +189,6 @@ img {
 
 .footer__left {
     justify-content: flex-start;
-    /* width: 50.5rem; */
 }
 
 .left__a,
@@ -200,4 +199,4 @@ img {
 
 .footer__right {
     justify-content: flex-end;
-    /* width: 31.1rem; *a}
+}
