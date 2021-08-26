@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
         <link
             rel="shortcut icon"
             href="https://en.wikipedia.org/favicon.ico"
@@ -29,19 +35,42 @@
                 <p class="header__wikipedia-subtitle">La enciclopedia libre</p>
             </section>
         </header>
-        <!-- <main class="main">
-            <section class="main__search-container">
-                <form action="">
-                    <label for="">
-                        <input type="text" />
-                    </label>
-                </form>
-                <span>ES</span>
-                <span class="main__select-languaje"></span>
-                <div class="main__search-icon-container">
+        <main class="main">
+            <section class="main__seccion-de-busqueda">
+                <section class="">
+                    <form action="" class="main__form">
+                        <label for="">
+                            <input class="main__input" type="text" />
+                        </label>
+                    </form>
+                    <section class="main__languaje">
+                        <!-- <label for="">ES</label> -->
+                        <select
+                            name="languaje-container"
+                            id=""
+                            class="languaje-container"
+                        >
+                            <option value="Polski">Polski</option>
+                            <option value="Slovenčina">Slovenčina</option>
+                            <option value="العربية">العربية</option>
+                            <option value="Asturianu">Asturianu</option>
+                            <option value="Azərbaycanca">Azərbaycanca</option>
+                            <option value="Български">Български</option>
+                            <option value="Bân-lâm-gú/Hō-ló-oē">
+                                Bân-lâm-gú / Hō-ló-oē
+                            </option>
+                        </select>
+                    
+                        <!-- <span class="main__current-languaje">ES</span>
+                            <span class="main__select-languaje"></span> -->
+                    </section>
+                </section>
+                <!-- <section class="main__search-icon-container"> -->
+                <section class="main__search-icon-container">
                     <span class="main__search-icon"></span>
-                </div>
-            </section> -->
+                </section>
+                <!-- </section> -->
+            </section>
         </main>
     </body>
 </html>
