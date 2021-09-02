@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-16" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,15 +16,22 @@
             type="image/x-icon"
         />
         <link rel="stylesheet" href="./CSS/style.css" />
+        <link
+            rel="stylesheet"
+            href="./CSS/tablet.css"
+            media="screen and (min-width: 800px)"
+        />
+        <link rel="stylesheet" href="./CSS/desktop.css" media="screen and (min-width: 1200px)">
         <title>Wiki Fake</title>
     </head>
+
     <body>
         <header class="header">
             <section class="header__wikipedia-icon-container">
                 <figure class="header__wikipedia-logo">
                     <img
                         src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"
-                        alt=""
+                        alt="Logo de Wikipedia"
                     />
                 </figure>
             </section>
@@ -37,40 +44,3228 @@
         </header>
         <main class="main">
             <section class="main__seccion-de-busqueda">
-                <section class="">
-                    <form action="" class="main__form">
-                        <label for="">
-                            <input class="main__input" type="text" />
-                        </label>
-                    </form>
-                    <section class="main__languaje">
-                        <!-- <label for="">ES</label> -->
-                        <select
-                            name="languaje-container"
-                            id=""
-                            class="languaje-container"
-                        >
-                            <option value="Polski">Polski</option>
-                            <option value="Slovenčina">Slovenčina</option>
-                            <option value="العربية">العربية</option>
-                            <option value="Asturianu">Asturianu</option>
-                            <option value="Azərbaycanca">Azərbaycanca</option>
-                            <option value="Български">Български</option>
-                            <option value="Bân-lâm-gú/Hō-ló-oē">
-                                Bân-lâm-gú / Hō-ló-oē
-                            </option>
-                        </select>
-                    
-                        <!-- <span class="main__current-languaje">ES</span>
-                            <span class="main__select-languaje"></span> -->
-                    </section>
+                <form action="" class="main__form">
+                    <label for="">
+                        <input class="main__input" type="text" />
+                    </label>
+                </form>
+                <section class="seccion-de-busqueda__languaje">
+                    <select
+                        name="languaje-select"
+                        id=""
+                        class="languaje-select"
+                    >
+                        <option value="Polski">Polski</option>
+                        <option value="Slovenčina">Slovenčina</option>
+                        <option value="العربية">العربية</option>
+                        <option value="Asturianu">Asturianu</option>
+                        <option value="Azərbaycanca">Azərbaycanca</option>
+                        <option value="Български">Български</option>
+                        <option value="Bân-lâm-gú/Hō-ló-oē">
+                            Bân-lâm-gú / Hō-ló-oē
+                        </option>
+                        <option value="বাংলা">বাংলা</option>
+                        <option value="Беларуская">Беларуская</option>
+                        <option value="Català">Català</option>
+                        <option value="Čeština">Čeština</option>
+                        <option value="Cymraeg">Cymraeg</option>
+                        <option value="Dansk">Dansk</option>
+                        <option value="Deutsch">Deutsch</option>
+                        <option value="Eesti">Eesti</option>
+                        <option value="Ελληνικά">Ελληνικά</option>
+                        <option value="English">English</option>
+                        <option value="Español">Español</option>
+                        <option value="Esperanto">Esperanto</option>
+                        <option value="Euskara">Euskara</option>
+                        <option value="فارسی">فارسی</option>
+                        <option value="Français">Français</option>
+                        <option value="Galego">Galego</option>
+                        <option value="Հայերեն">Հայերեն</option>
+                        <option value="हिन्दी">हिन्दी</option>
+                        <option value="Hrvatski">Hrvatski</option>
+                        <option value="Bahasa-Indonesia">
+                            Bahasa Indonesia
+                        </option>
+                        <option value="Italiano">Italiano</option>
+                        <option value="עברית">עברית</option>
+                        <option value="ქართული">ქართული</option>
+                        <option value="Latina">Latina</option>
+                        <option value="Latviešu">Latviešu</option>
+                        <option value="Lietuvių">Lietuvių</option>
+                        <option value="Magyar">Magyar</option>
+                        <option value="Македонски">Македонски</option>
+                        <option value="مصرى">مصرى</option>
+                        <option value="Bahasa-Melayu">Bahasa Melayu</option>
+                        <option value="Bahaso-Minangkabau">
+                            Bahaso Minangkabau
+                        </option>
+                        <option value="Nederlands">Nederlands</option>
+                        <option value="日本語">日本語</option>
+                        <option value="Norsk-(bokmål)">Norsk (bokmål)</option>
+                        <option value="Norsk-(nynorsk)">Norsk (nynorsk)</option>
+                        <option value="Нохчийн">Нохчийн</option>
+                        <option value="Oʻzbekcha/Ўзбекча">
+                            Oʻzbekcha / Ўзбекча
+                        </option>
+                        <option value="Português">Português</option>
+                        <option value="Қазақша/Qazaqşa/قازاقشا">
+                            Қазақша / Qazaqşa / قازاقشا
+                        </option>
+                        <option value="Română">Română</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Simple-English">Simple English</option>
+                        <option value="Sinugboanong-Binisaya">
+                            Sinugboanong Binisaya
+                        </option>
+                        <option value="Slovenščina">Slovenščina</option>
+                        <option value="Српски/Srpski">Српски / Srpski</option>
+                        <option value="Srpskohrvatski/Српскохрватски">
+                            Srpskohrvatski / Српскохрватски
+                        </option>
+                        <option value="Suomi">Suomi</option>
+                        <option value="Svenska">Svenska</option>
+                        <option value="தமிழ்">தமிழ்</option>
+                        <option value="Татарча/Tatarça">
+                            Татарча / Tatarça
+                        </option>
+                        <option value="ภาษาไทย">ภาษาไทย</option>
+                        <option value="Тоҷикӣ">Тоҷикӣ</option>
+                        <option value="تۆرکجه">تۆرکجه</option>
+                        <option value="Türkçe">Türkçe</option>
+                        <option value="Українська">Українська</option>
+                        <option value="اردو">اردو</option>
+                        <option value="Tiếng Việt">Tiếng Việt</option>
+                        <option value="Volapük">Volapük</option>
+                        <option value="Winaray">Winaray</option>
+                        <option value="粵語">粵語</option>
+                        <option value="中文">中文</option>
+                        <option value="မြန်မာဘာသာ">မြန်မာဘာသာ</option>
+                        <option value="한국어">한국어</option>
+                    </select>
                 </section>
-                <!-- <section class="main__search-icon-container"> -->
                 <section class="main__search-icon-container">
                     <span class="main__search-icon"></span>
                 </section>
-                <!-- </section> -->
+            </section>
+            <section class="main__languaje-wikipedia">
+                <figure class="languaje-wikipedia__wikipedia-logo">
+                    <img
+                        src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"
+                        alt="Logo de Wikipedia"
+                    />
+                </figure>
+                <!-- <figure class="xd">
+                    <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" alt="Logo de Wikipedia">
+                </figure> -->
+                <div class="espanol-languaje single-languaje">
+                    <a
+                        href="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Español</h3>
+                        <p class="single-languaje__p">1 696 000+</p>
+                        <p class="single-languaje__p">artículos</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="english-languaje single-languaje">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Main_Page"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">English</h3>
+                        <p class="single-languaje__p">6 326 000+</p>
+                        <p class="single-languaje__p">articles</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="japanese-languaje single-languaje">
+                    <a
+                        href="https://ja.m.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">日本語</h3>
+                        <p class="single-languaje__p">1 275 000+</p>
+                        <p class="single-languaje__p">記事</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="deutsch-languaje single-languaje">
+                    <a
+                        href="https://de.m.wikipedia.org/wiki/Wikipedia:Hauptseite"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Deutsch</h3>
+                        <p class="single-languaje__p">2 590 000+</p>
+                        <p class="single-languaje__p">Artikel</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="russian-languaje single-languaje">
+                    <a
+                        href="https://ru.m.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Русский</h3>
+                        <p class="single-languaje__p">1 734 000+</p>
+                        <p class="single-languaje__p">статей</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="french-languaje single-languaje">
+                    <a
+                        href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Français</h3>
+                        <p class="single-languaje__p">2 340 000+</p>
+                        <p class="single-languaje__p">articles</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="chinese-languaje single-languaje">
+                    <a
+                        href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">中文</h3>
+                        <p class="single-languaje__p">1 206 000+</p>
+                        <p class="single-languaje__p">條目</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="italian-languaje single-languaje">
+                    <a
+                        href="https://it.m.wikipedia.org/wiki/Pagina_principale"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Italiano</h3>
+                        <p class="single-languaje__p">1 701 000+</p>
+                        <p class="single-languaje__p">voci</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="portuguese-languaje single-languaje">
+                    <a
+                        href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Português</h3>
+                        <p class="single-languaje__p">1 066 000+</p>
+                        <p class="single-languaje__p">artigos</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+                <div class="polski-languaje single-languaje">
+                    <a
+                        href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"
+                        class="single-languaje__a"
+                    >
+                        <h3 class="single-languaje__h3">Polski</h3>
+                        <p class="single-languaje__p">1 480 000+</p>
+                        <p class="single-languaje__p">haseł</p>
+                        <p
+                            class="
+                                single-languaje__p single-languaje__p--mw800px
+                            "
+                        >
+                            1 696 000+ artículos
+                        </p>
+                    </a>
+                </div>
+            </section>
+            <section class="main__all-languajes">
+                <section class="main__languaje-bar">
+                    <button class="languaje-bar__button">
+                        <figure class="languaje-bar__figure-icon">
+                            <span class="languaje-bar__icon"></span>
+                        </figure>
+                        <p class="languaje-bar__p">
+                            Leer Wikipedia en tu idioma
+                        </p>
+                        <figure class="languaje-bar__figure-arrow">
+                            <span class="languaje-bar__arrown-down-blue"></span>
+                        </figure>
+                    </button>
+                    <div class="all-languajes__linea-decorativa"></div>
+                </section>
+                <section class="main__articles-in-different-languages">
+                    <section class="more-one-millon-articles-container">
+                        <h2
+                            class="
+                                articles-in-different-languages__number-of-articles
+                                more-one-millon-articles-number
+                            "
+                        >
+                            1 000 000+ artículos
+                        </h2>
+                        <div class="main__linea-decorativa"></div>
+                        <div>
+                            <ul
+                                class="
+                                    articles-in-different-languages__different-languages
+                                "
+                            >
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//pl.wikipedia.org/"
+                                        lang="pl"
+                                        title="Angielski"
+                                        class="different-languages__a"
+                                        >Polski</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//ar.wikipedia.org/"
+                                        lang="ar"
+                                        title="Al-ʿArabīyah"
+                                        class="different-languages__a"
+                                        ><bdi dir="rtl">العربية</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//de.wikipedia.org/"
+                                        lang="de"
+                                        class="different-languages__a"
+                                        >Deutsch</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//en.wikipedia.org/"
+                                        lang="en"
+                                        title="English"
+                                        class="different-languages__a"
+                                        >English</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//es.wikipedia.org/"
+                                        lang="es"
+                                        class="different-languages__a"
+                                        >Español</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//fr.wikipedia.org/"
+                                        lang="fr"
+                                        class="different-languages__a"
+                                        >Français</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//it.wikipedia.org/"
+                                        lang="it"
+                                        class="different-languages__a"
+                                        >Italiano</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//arz.wikipedia.org/"
+                                        lang="arz"
+                                        title="Maṣrī"
+                                        class="different-languages__a"
+                                        ><bdi dir="rtl">مصرى</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//nl.wikipedia.org/"
+                                        lang="nl"
+                                        class="different-languages__a"
+                                        >Nederlands</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//ja.wikipedia.org/"
+                                        lang="ja"
+                                        title="Nihongo"
+                                        class="different-languages__a"
+                                        >日本語</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//pt.wikipedia.org/"
+                                        lang="pt"
+                                        class="different-languages__a"
+                                        >Português</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//ru.wikipedia.org/"
+                                        lang="ru"
+                                        title="Russkiy"
+                                        class="different-languages__a"
+                                        >Русский</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//ceb.wikipedia.org/"
+                                        lang="ceb"
+                                        class="different-languages__a"
+                                        >Sinugboanong</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//sv.wikipedia.org/"
+                                        lang="sv"
+                                        class="different-languages__a"
+                                        >Svenska</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//uk.wikipedia.org/"
+                                        lang="uk"
+                                        title="Ukrayins’ka"
+                                        class="different-languages__a"
+                                        >Українська</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//vi.wikipedia.org/"
+                                        lang="vi"
+                                        class="different-languages__a"
+                                        >Tiếng Việt</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//war.wikipedia.org/"
+                                        lang="war"
+                                        class="different-languages__a"
+                                        >Winaray</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        href="//zh.wikipedia.org/"
+                                        lang="zh"
+                                        title="Zhōngwén"
+                                        class="different-languages__a"
+                                        >中文</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section
+                        class="main__more-hundred-thousand-articles-container"
+                    >
+                        <h2
+                            class="
+                                more-hundred-thousand-articles-number
+                                articles-in-different-languages__number-of-articles
+                            "
+                        >
+                            100 000+ artículos
+                        </h2>
+                        <div class="main__linea-decorativa"></div>
+                        <div
+                            class="
+                                articles-in-different-languages__different-languages
+                            "
+                        >
+                            <ul
+                                class="
+                                    articles-in-different-languages__different-languages
+                                "
+                            >
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//sk.wikipedia.org/"
+                                        lang="sk"
+                                        title="Angličtina"
+                                        >Slovenčina</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ast.wikipedia.org/"
+                                        lang="ast"
+                                        >Asturianu</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//az.wikipedia.org/"
+                                        lang="az"
+                                        >Azərbaycanca</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//bg.wikipedia.org/"
+                                        lang="bg"
+                                        title="Bǎlgarski"
+                                        >Български</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//zh-min-nan.wikipedia.org/"
+                                        lang="nan"
+                                        >Bân-lâm-gú / Hō-ló-oē</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//bn.wikipedia.org/"
+                                        lang="bn"
+                                        title="Bangla"
+                                        >বাংলা</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//be.wikipedia.org/"
+                                        lang="be"
+                                        title="Belaruskaya"
+                                        >Беларуская</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ca.wikipedia.org/"
+                                        lang="ca"
+                                        >Català</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//cs.wikipedia.org/"
+                                        lang="cs"
+                                        title="čeština"
+                                        >Čeština</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//cy.wikipedia.org/"
+                                        lang="cy"
+                                        title="Cymraeg"
+                                        >Cymraeg</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//da.wikipedia.org/"
+                                        lang="da"
+                                        >Dansk</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//et.wikipedia.org/"
+                                        lang="et"
+                                        >Eesti</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//el.wikipedia.org/"
+                                        lang="el"
+                                        title="Ellīniká"
+                                        >Ελληνικά</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//eo.wikipedia.org/"
+                                        lang="eo"
+                                        >Esperanto</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//eu.wikipedia.org/"
+                                        lang="eu"
+                                        >Euskara</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//fa.wikipedia.org/"
+                                        lang="fa"
+                                        title="Fārsi"
+                                        ><bdi dir="rtl">فارسی</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//gl.wikipedia.org/"
+                                        lang="gl"
+                                        >Galego</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//hy.wikipedia.org/"
+                                        lang="hy"
+                                        title="Hayeren"
+                                        >Հայերեն</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//hi.wikipedia.org/"
+                                        lang="hi"
+                                        title="Hindī"
+                                        >हिन्दी</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//hr.wikipedia.org/"
+                                        lang="hr"
+                                        >Hrvatski</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//id.wikipedia.org/"
+                                        lang="id"
+                                        >Bahasa Indonesia</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//he.wikipedia.org/"
+                                        lang="he"
+                                        title="Ivrit"
+                                        ><bdi dir="rtl">עברית</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ka.wikipedia.org/"
+                                        lang="ka"
+                                        title="Kartuli"
+                                        >ქართული</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//la.wikipedia.org/"
+                                        lang="la"
+                                        >Latina</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//lv.wikipedia.org/"
+                                        lang="lv"
+                                        >Latviešu</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//lt.wikipedia.org/"
+                                        lang="lt"
+                                        >Lietuvių</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//hu.wikipedia.org/"
+                                        lang="hu"
+                                        >Magyar</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//mk.wikipedia.org/"
+                                        lang="mk"
+                                        title="Makedonski"
+                                        >Македонски</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ms.wikipedia.org/"
+                                        lang="ms"
+                                        >Bahasa Melayu</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//min.wikipedia.org/"
+                                        lang="min"
+                                        >Bahaso Minangkabau</a
+                                    >
+                                </li>
+                                <li class="different-languages__li" lang="no">
+                                    Norsk
+                                    <a
+                                        class="different-languages__a"
+                                        href="//no.wikipedia.org/"
+                                        lang="nb"
+                                        >(bokmål</a
+                                    >
+                                    <a
+                                        class="different-languages__a"
+                                        href="//nn.wikipedia.org/"
+                                        lang="nn"
+                                        >nynorsk)</a
+                                    >
+                                </li>
+
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ce.wikipedia.org/"
+                                        lang="ce"
+                                        title="Noxçiyn"
+                                        >Нохчийн</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//uz.wikipedia.org/"
+                                        lang="uz"
+                                        >Oʻzbekcha / Ўзбекча</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//kk.wikipedia.org/"
+                                        lang="kk"
+                                        ><span lang="kk-Cyrl">Қазақша</span> /
+                                        <span lang="kk-Latn">Qazaqşa</span> /
+                                        <bdi lang="kk-Arab" dir="rtl"
+                                            >قازاقشا</bdi
+                                        ></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ro.wikipedia.org/"
+                                        lang="ro"
+                                        title="Română"
+                                        >Română</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//simple.wikipedia.org/"
+                                        lang="en"
+                                        >Simple English</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//sl.wikipedia.org/"
+                                        lang="sl"
+                                        >Slovenščina</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//sr.wikipedia.org/"
+                                        lang="sr"
+                                        >Српски / Srpski</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//sh.wikipedia.org/"
+                                        lang="sh"
+                                        >Srpskohrvatski / Српскохрватски</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//fi.wikipedia.org/"
+                                        lang="fi"
+                                        title="suomi"
+                                        >Suomi</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ta.wikipedia.org/"
+                                        lang="ta"
+                                        title="Tamiḻ"
+                                        >தமிழ்</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//tt.wikipedia.org/"
+                                        lang="tt"
+                                        >Татарча / Tatarça</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//th.wikipedia.org/"
+                                        lang="th"
+                                        title="Phasa Thai"
+                                        >ภาษาไทย</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//tg.wikipedia.org/"
+                                        lang="tg"
+                                        title="Tojikī"
+                                        >Тоҷикӣ</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//azb.wikipedia.org/"
+                                        lang="azb"
+                                        title="Türkce"
+                                        ><bdi dir="rtl">تۆرکجه</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//tr.wikipedia.org/"
+                                        lang="tr"
+                                        title="Türkçe"
+                                        >Türkçe</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ur.wikipedia.org/"
+                                        lang="ur"
+                                        title="Urdu"
+                                        ><bdi dir="rtl">اردو</bdi></a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//vo.wikipedia.org/"
+                                        lang="vo"
+                                        >Volapük</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//zh-yue.wikipedia.org/"
+                                        lang="yue"
+                                        title="Yuht Yúh / Jyut6 jyu5"
+                                        data-convert-hans="粤语"
+                                        id="zh-yue_wiki"
+                                        >粵語</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//my.wikipedia.org/"
+                                        lang="my"
+                                        title="Myanmarsar"
+                                        >မြန်မာဘာသာ</a
+                                    >
+                                </li>
+                                <li class="different-languages__li">
+                                    <a
+                                        class="different-languages__a"
+                                        href="//ko.wikipedia.org/"
+                                        lang="ko"
+                                        title="Hangugeo"
+                                        >한국어</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2
+                            class="
+                                articles-in-different-languages__number-of-articles
+                            "
+                        >
+                            10 000+ artículos
+                        </h2>
+                        <div class="main__linea-decorativa"></div>
+                        <ul
+                            class="
+                                articles-in-different-languages__different-languages
+                            "
+                        >
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ace.wikipedia.org/"
+                                    lang="ace"
+                                    >Bahsa Acèh</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//af.wikipedia.org/"
+                                    lang="af"
+                                    >Afrikaans</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//als.wikipedia.org/"
+                                    lang="gsw"
+                                    >Alemannisch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//am.wikipedia.org/"
+                                    lang="am"
+                                    title="Āmariññā"
+                                    >አማርኛ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//an.wikipedia.org/"
+                                    lang="an"
+                                    >Aragonés</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//map-bms.wikipedia.org/"
+                                    lang="map-x-bms"
+                                    >Basa Banyumasan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ba.wikipedia.org/"
+                                    lang="ba"
+                                    title="Başqortsa"
+                                    >Башҡортса</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//be-tarask.wikipedia.org/"
+                                    lang="be"
+                                    title="Belaruskaya (Taraškievica)"
+                                    >Беларуская (Тарашкевіца)</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bcl.wikipedia.org/"
+                                    lang="bcl"
+                                    >Bikol Central</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bpy.wikipedia.org/"
+                                    lang="bpy"
+                                    title="Bishnupriya Manipuri"
+                                    >বিষ্ণুপ্রিয়া মণিপুরী</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bar.wikipedia.org/"
+                                    lang="bar"
+                                    >Boarisch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bs.wikipedia.org/"
+                                    lang="bs"
+                                    >Bosanski</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//br.wikipedia.org/"
+                                    lang="br"
+                                    >Brezhoneg</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//cv.wikipedia.org/"
+                                    lang="cv"
+                                    title="Čăvašla"
+                                    >Чӑвашла</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nv.wikipedia.org/"
+                                    lang="nv"
+                                    >Diné Bizaad</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//eml.wikipedia.org/"
+                                    lang="roa-x-eml"
+                                    >Emigliàn–Rumagnòl</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//fo.wikipedia.org/"
+                                    lang="fo"
+                                    >Føroyskt</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//fy.wikipedia.org/"
+                                    lang="fy"
+                                    >Frysk</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ga.wikipedia.org/"
+                                    lang="ga"
+                                    >Gaeilge</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gd.wikipedia.org/"
+                                    lang="gd"
+                                    >Gàidhlig</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gu.wikipedia.org/"
+                                    lang="gu"
+                                    title="Gujarati"
+                                    >ગુજરાતી</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ha.wikipedia.org/"
+                                    lang="ha"
+                                    ><span lang="ha-Latn">Hausa</span> /
+                                    <bdi lang="ha-Arab" dir="rtl"
+                                        >هَوُسَا</bdi
+                                    ></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//hsb.wikipedia.org/"
+                                    lang="hsb"
+                                    >Hornjoserbsce</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//io.wikipedia.org/"
+                                    lang="io"
+                                    title="Ido"
+                                    >Ido</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ilo.wikipedia.org/"
+                                    lang="ilo"
+                                    >Ilokano</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ia.wikipedia.org/"
+                                    lang="ia"
+                                    >Interlingua</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//os.wikipedia.org/"
+                                    lang="os"
+                                    title="Iron Ævzag"
+                                    >Ирон æвзаг</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//is.wikipedia.org/"
+                                    lang="is"
+                                    >Íslenska</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//jv.wikipedia.org/"
+                                    lang="jv"
+                                    title="Jawa"
+                                    >Jawa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kn.wikipedia.org/"
+                                    lang="kn"
+                                    title="Kannada"
+                                    >ಕನ್ನಡ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ht.wikipedia.org/"
+                                    lang="ht"
+                                    >Kreyòl Ayisyen</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ku.wikipedia.org/"
+                                    lang="ku"
+                                    ><span lang="ku-Latn">Kurdî</span> /
+                                    <bdi lang="ku-Arab" dir="rtl">كوردی</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ckb.wikipedia.org/"
+                                    lang="ckb"
+                                    title="Kurdîy Nawendî"
+                                    ><bdi dir="rtl">کوردیی ناوەندی</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ky.wikipedia.org/"
+                                    lang="ky"
+                                    title="Kyrgyzča"
+                                    >Кыргызча</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mrj.wikipedia.org/"
+                                    lang="mjr"
+                                    title="Kyryk Mary"
+                                    >Кырык Мары</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lb.wikipedia.org/"
+                                    lang="lb"
+                                    >Lëtzebuergesch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//li.wikipedia.org/"
+                                    lang="li"
+                                    >Limburgs</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lmo.wikipedia.org/"
+                                    lang="lmo"
+                                    >Lombard</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lij.wikipedia.org/"
+                                    lang="lij"
+                                    >Lìgure</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mai.wikipedia.org/"
+                                    lang="mai"
+                                    title="Maithilī"
+                                    >मैथिली</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mg.wikipedia.org/"
+                                    lang="mg"
+                                    >Malagasy</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ml.wikipedia.org/"
+                                    lang="ml"
+                                    title="Malayalam"
+                                    >മലയാളം</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//zh-classical.wikipedia.org/"
+                                    lang="lzh"
+                                    title="Man4jin4 / Wényán"
+                                    >文言</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mr.wikipedia.org/"
+                                    lang="mr"
+                                    title="Marathi"
+                                    >मराठी</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//xmf.wikipedia.org/"
+                                    lang="xmf"
+                                    title="Margaluri"
+                                    >მარგალური</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mzn.wikipedia.org/"
+                                    lang="mzn"
+                                    title="Mäzeruni"
+                                    ><bdi dir="rtl">مازِرونی</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//cdo.wikipedia.org/"
+                                    lang="cdo"
+                                    title="Ming-deng-ngu"
+                                    >Mìng-dĕ̤ng-ngṳ̄ / 閩東語</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mn.wikipedia.org/"
+                                    lang="mn"
+                                    title="Mongol"
+                                    >Монгол</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//new.wikipedia.org/"
+                                    lang="new"
+                                    title="Nepal Bhasa"
+                                    >नेपाल भाषा</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ne.wikipedia.org/"
+                                    lang="ne"
+                                    title="Nepālī"
+                                    >नेपाली</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nap.wikipedia.org/"
+                                    lang="nap"
+                                    >Nnapulitano</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//frr.wikipedia.org/"
+                                    lang="frr"
+                                    >Nordfriisk</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//oc.wikipedia.org/"
+                                    lang="oc"
+                                    >Occitan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mhr.wikipedia.org/"
+                                    lang="mhr"
+                                    title="Olyk Marij"
+                                    >Марий</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//or.wikipedia.org/"
+                                    lang="or"
+                                    title="Oṛiā"
+                                    >ଓଡି଼ଆ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pa.wikipedia.org/"
+                                    lang="pa"
+                                    title="Pañjābī (Gurmukhī)"
+                                    >ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ)</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pnb.wikipedia.org/"
+                                    lang="pnb"
+                                    title="Pañjābī (Shāhmukhī)"
+                                    ><bdi dir="rtl">پنجابی (شاہ مکھی)</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ps.wikipedia.org/"
+                                    lang="ps"
+                                    title="Paʂto"
+                                    ><bdi dir="rtl">پښتو</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pms.wikipedia.org/"
+                                    lang="pms"
+                                    >Piemontèis</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nds.wikipedia.org/"
+                                    lang="nds"
+                                    >Plattdüütsch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//crh.wikipedia.org/"
+                                    lang="crh"
+                                    >Qırımtatarca</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//qu.wikipedia.org/"
+                                    lang="qu"
+                                    >Runa Simi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sa.wikipedia.org/"
+                                    lang="sa"
+                                    title="Saṃskṛtam"
+                                    >संस्कृतम्</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sah.wikipedia.org/"
+                                    lang="sah"
+                                    title="Saxa Tyla"
+                                    >Саха Тыла</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sco.wikipedia.org/"
+                                    lang="sco"
+                                    >Scots</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sq.wikipedia.org/"
+                                    lang="sq"
+                                    >Shqip</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//scn.wikipedia.org/"
+                                    lang="scn"
+                                    >Sicilianu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//si.wikipedia.org/"
+                                    lang="si"
+                                    title="Siṃhala"
+                                    >සිංහල</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sd.wikipedia.org/"
+                                    lang="sd"
+                                    title="Sindhī"
+                                    ><bdi dir="rtl">سنڌي</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//szl.wikipedia.org/"
+                                    lang="szl"
+                                    >Ślůnski</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//su.wikipedia.org/"
+                                    lang="su"
+                                    >Basa Sunda</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sw.wikipedia.org/"
+                                    lang="sw"
+                                    >Kiswahili</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tl.wikipedia.org/"
+                                    lang="tl"
+                                    >Tagalog</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//te.wikipedia.org/"
+                                    lang="te"
+                                    title="Telugu"
+                                    >తెలుగు</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bug.wikipedia.org/"
+                                    lang="bug"
+                                    >ᨅᨔ ᨕᨙᨁᨗ / Basa Ugi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//vec.wikipedia.org/"
+                                    lang="vec"
+                                    >Vèneto</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//wa.wikipedia.org/"
+                                    lang="wa"
+                                    >Walon</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//wuu.wikipedia.org/"
+                                    lang="wuu"
+                                    title="Wú Yǔ"
+                                    data-convert-hans="吴语"
+                                    id="wuu_wiki"
+                                    >吳語</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//yi.wikipedia.org/"
+                                    lang="yi"
+                                    title="Yidiš"
+                                    ><bdi dir="rtl">ייִדיש</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//yo.wikipedia.org/"
+                                    lang="yo"
+                                    >Yorùbá</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//diq.wikipedia.org/"
+                                    lang="diq"
+                                    title="Zazaki"
+                                    >Zazaki</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bat-smg.wikipedia.org/"
+                                    lang="sgs"
+                                    >Žemaitėška</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="
+                                articles-in-different-languages__number-of-articles
+                            "
+                        >
+                            1 000+ artículos
+                        </h2>
+                        <div class="main__linea-decorativa"></div>
+                        <ul
+                            class="
+                                articles-in-different-languages__different-languages
+                            "
+                        >
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kbd.wikipedia.org/"
+                                    lang="kbd"
+                                    title="Adighabze"
+                                    >Адыгэбзэ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ang.wikipedia.org/"
+                                    lang="ang"
+                                    >Ænglisc</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ak.wikipedia.org/"
+                                    lang="ak"
+                                    >Akan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ab.wikipedia.org/"
+                                    lang="ab"
+                                    title="Aṗsua"
+                                    >Аҧсуа</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//hyw.wikipedia.org/"
+                                    lang="hyw"
+                                    title="Arevmdahayeren"
+                                    >Արեւմտահայերէն</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//roa-rup.wikipedia.org/"
+                                    lang="roa-rup"
+                                    >Armãneashce</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//frp.wikipedia.org/"
+                                    lang="frp"
+                                    >Arpitan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ig.wikipedia.org/"
+                                    lang="ig"
+                                    >asụsụ bekee maọbụ asụsụ oyibo</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//arc.wikipedia.org/"
+                                    lang="arc"
+                                    title="Ātûrāyâ"
+                                    ><bdi dir="rtl">ܐܬܘܪܝܐ</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gn.wikipedia.org/"
+                                    lang="gn"
+                                    >Avañe’ẽ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//av.wikipedia.org/"
+                                    lang="av"
+                                    title="Avar"
+                                    >Авар</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ay.wikipedia.org/"
+                                    lang="ay"
+                                    >Aymar</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ban.wikipedia.org/"
+                                    lang="ban"
+                                    title="Basa Bali"
+                                    >Basa Bali</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bjn.wikipedia.org/"
+                                    lang="bjn"
+                                    >Bahasa Banjar</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bh.wikipedia.org/"
+                                    lang="bh"
+                                    title="Bhōjapurī"
+                                    >भोजपुरी</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bi.wikipedia.org/"
+                                    lang="bi"
+                                    >Bislama</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bo.wikipedia.org/"
+                                    lang="bo"
+                                    title="Bod Skad"
+                                    >བོད་ཡིག</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bxr.wikipedia.org/"
+                                    lang="bxr"
+                                    title="Buryad"
+                                    >Буряад</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//cbk-zam.wikipedia.org/"
+                                    lang="cbk-x-zam"
+                                    >Chavacano de Zamboanga</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//co.wikipedia.org/"
+                                    lang="co"
+                                    >Corsu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//za.wikipedia.org/"
+                                    lang="za"
+                                    >Vahcuengh / 話僮</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//se.wikipedia.org/"
+                                    lang="se"
+                                    >Davvisámegiella</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pdc.wikipedia.org/"
+                                    lang="pdc"
+                                    >Deitsch</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="different-languages__a"
+                                    href="//dsb.wikipedia.org/"
+                                    lang="dsb"
+                                    >Dolnoserbski</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//myv.wikipedia.org/"
+                                    lang="myv"
+                                    title="Erzjanj"
+                                    >Эрзянь</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ext.wikipedia.org/"
+                                    lang="ext"
+                                    >Estremeñu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//hif.wikipedia.org/"
+                                    lang="hif"
+                                    >Fiji Hindi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//fur.wikipedia.org/"
+                                    lang="fur"
+                                    >Furlan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gv.wikipedia.org/"
+                                    lang="gv"
+                                    >Gaelg</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gag.wikipedia.org/"
+                                    lang="gag"
+                                    >Gagauz</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ki.wikipedia.org/"
+                                    lang="ki"
+                                    >Gĩkũyũ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//glk.wikipedia.org/"
+                                    lang="glk"
+                                    title="Giləki"
+                                    ><bdi dir="rtl">گیلکی</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gan.wikipedia.org/"
+                                    lang="gan"
+                                    title="Gon ua"
+                                    data-convert-hans="赣语"
+                                    id="gan_wiki"
+                                    >贛語</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//hak.wikipedia.org/"
+                                    lang="hak"
+                                    >Hak-kâ-ngî / 客家語</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//xal.wikipedia.org/"
+                                    lang="xal"
+                                    title="Halʹmg"
+                                    >Хальмг</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//haw.wikipedia.org/"
+                                    lang="haw"
+                                    >ʻŌlelo Hawaiʻi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ie.wikipedia.org/"
+                                    lang="ie"
+                                    >Interlingue</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pam.wikipedia.org/"
+                                    lang="pam"
+                                    >Kapampangan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//csb.wikipedia.org/"
+                                    lang="csb"
+                                    >Kaszëbsczi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kw.wikipedia.org/"
+                                    lang="kw"
+                                    >Kernewek</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//km.wikipedia.org/"
+                                    lang="km"
+                                    title="Phéasa Khmér"
+                                    >ភាសាខ្មែរ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//rw.wikipedia.org/"
+                                    lang="rw"
+                                    >Kinyarwanda</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kv.wikipedia.org/"
+                                    lang="kv"
+                                    title="Komi"
+                                    >Коми</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kg.wikipedia.org/"
+                                    lang="kg"
+                                    >Kongo</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gom.wikipedia.org/"
+                                    lang="gom"
+                                    >कोंकणी / Konknni</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//gcr.wikipedia.org/"
+                                    lang="gcr"
+                                    title="Kriyòl Gwiyannen"
+                                    >Kriyòl Gwiyannen</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lo.wikipedia.org/"
+                                    lang="lo"
+                                    title="Phaasaa Laao"
+                                    >ພາສາລາວ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lad.wikipedia.org/"
+                                    lang="lad"
+                                    title="Ladino"
+                                    ><span lang="lad-Latn">Dzhudezmo</span> /
+                                    <bdi lang="lad-Hebr" dir="rtl"
+                                        >לאדינו</bdi
+                                    ></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lbe.wikipedia.org/"
+                                    lang="lbe"
+                                    title="Lakːu"
+                                    >Лакку</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ltg.wikipedia.org/"
+                                    lang="ltg"
+                                    >Latgaļu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lez.wikipedia.org/"
+                                    lang="lez"
+                                    title="Lezgi"
+                                    >Лезги</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ln.wikipedia.org/"
+                                    lang="ln"
+                                    >Lingála</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//jbo.wikipedia.org/"
+                                    lang="jbo"
+                                    >lojban</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//lg.wikipedia.org/"
+                                    lang="lg"
+                                    >Luganda</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mt.wikipedia.org/"
+                                    lang="mt"
+                                    >Malti</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ty.wikipedia.org/"
+                                    lang="ty"
+                                    >Reo Mā’ohi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mi.wikipedia.org/"
+                                    lang="mi"
+                                    >Māori</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mwl.wikipedia.org/"
+                                    lang="mwl"
+                                    >Mirandés</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//mdf.wikipedia.org/"
+                                    lang="mdf"
+                                    title="Mokšenj"
+                                    >Мокшень</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//fj.wikipedia.org/"
+                                    lang="fj"
+                                    >Na Vosa Vaka-Viti</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="different-languages__a"
+                                    href="//nah.wikipedia.org/"
+                                    lang="nah"
+                                    >Nāhuatlahtōlli</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//na.wikipedia.org/"
+                                    lang="na"
+                                    >Dorerin Naoero</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nds-nl.wikipedia.org/"
+                                    lang="nds-nl"
+                                    >Nedersaksisch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nrm.wikipedia.org/"
+                                    lang="roa-x-nrm"
+                                    >Nouormand / Normaund</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nov.wikipedia.org/"
+                                    lang="nov"
+                                    >Novial</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//om.wikipedia.org/"
+                                    lang="om"
+                                    title="Ingiliffaa"
+                                    >Afaan Oromoo</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//as.wikipedia.org/"
+                                    lang="as"
+                                    title="Ôxômiya"
+                                    >অসমীযা়</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pi.wikipedia.org/"
+                                    lang="pi"
+                                    title="Pāḷi"
+                                    >पालि</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pag.wikipedia.org/"
+                                    lang="pag"
+                                    >Pangasinán</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="different-languages__a"
+                                    href="//pap.wikipedia.org/"
+                                    lang="pap"
+                                    >Papiamentu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//koi.wikipedia.org/"
+                                    lang="koi"
+                                    title="Perem Komi"
+                                    >Перем Коми</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pfl.wikipedia.org/"
+                                    lang="pfl"
+                                    >Pfälzisch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pcd.wikipedia.org/"
+                                    lang="pcd"
+                                    >Picard</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//krc.wikipedia.org/"
+                                    lang="krc"
+                                    title="Qaraçay–Malqar"
+                                    >Къарачай–Малкъар</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kaa.wikipedia.org/"
+                                    lang="kaa"
+                                    >Qaraqalpaqsha</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ksh.wikipedia.org/"
+                                    lang="ksh"
+                                    >Ripoarisch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//rm.wikipedia.org/"
+                                    lang="rm"
+                                    >Rumantsch</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//rue.wikipedia.org/"
+                                    lang="rue"
+                                    title="Rusin’skyj Yazyk"
+                                    >Русиньскый Язык</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sm.wikipedia.org/"
+                                    lang="sm"
+                                    >Gagana Sāmoa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sc.wikipedia.org/"
+                                    lang="sc"
+                                    >Sardu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//stq.wikipedia.org/"
+                                    lang="stq"
+                                    >Seeltersk</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nso.wikipedia.org/"
+                                    lang="nso"
+                                    >Sesotho sa Leboa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sn.wikipedia.org/"
+                                    lang="sn"
+                                    >ChiShona</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//so.wikipedia.org/"
+                                    lang="so"
+                                    >Soomaaliga</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//srn.wikipedia.org/"
+                                    lang="srn"
+                                    >Sranantongo</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kab.wikipedia.org/"
+                                    lang="kab"
+                                    title="Taqbaylit"
+                                    >Taqbaylit</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//roa-tara.wikipedia.org/"
+                                    lang="roa"
+                                    >Tarandíne</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tet.wikipedia.org/"
+                                    lang="tet"
+                                    >Tetun</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tpi.wikipedia.org/"
+                                    lang="tpi"
+                                    >Tok Pisin</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//to.wikipedia.org/"
+                                    lang="to"
+                                    >faka Tonga</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tk.wikipedia.org/"
+                                    lang="tk"
+                                    >Türkmençe</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tyv.wikipedia.org/"
+                                    lang="tyv"
+                                    title="Tyva dyl"
+                                    >Тыва дыл</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//udm.wikipedia.org/"
+                                    lang="udm"
+                                    title="Udmurt"
+                                    >Удмурт</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ug.wikipedia.org/"
+                                    lang="ug"
+                                    ><bdi dir="rtl">ئۇيغۇرچه</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//vep.wikipedia.org/"
+                                    lang="vep"
+                                    >Vepsän</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//fiu-vro.wikipedia.org/"
+                                    lang="fiu-vro"
+                                    >Võro</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//vls.wikipedia.org/"
+                                    lang="vls"
+                                    >West-Vlams</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//wo.wikipedia.org/"
+                                    lang="wo"
+                                    >Wolof</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//xh.wikipedia.org/"
+                                    lang="xh"
+                                    >isiXhosa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//zea.wikipedia.org/"
+                                    lang="zea"
+                                    >Zeêuws</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//zu.wikipedia.org/"
+                                    lang="zu"
+                                    >isiZulu</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//dv.wikipedia.org/"
+                                    lang="dv"
+                                    title="އިނގިރޭސި"
+                                    ><bdi dir="rtl">ދިވެހިބަސް</bdi></a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="
+                                articles-in-different-languages__number-of-articles
+                            "
+                        >
+                            100+ artículos
+                        </h2>
+                        <div class="main__linea-decorativa"></div>
+                        <ul
+                            class="
+                                articles-in-different-languages__different-languages
+                            "
+                        >
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//bm.wikipedia.org/"
+                                    lang="bm"
+                                    >Bamanankan</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ch.wikipedia.org/"
+                                    lang="ch"
+                                    >Chamoru</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ny.wikipedia.org/"
+                                    lang="ny"
+                                    >Chichewa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ee.wikipedia.org/"
+                                    lang="ee"
+                                    >Eʋegbe</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ff.wikipedia.org/"
+                                    lang="ff"
+                                    >Fulfulde</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//got.wikipedia.org/"
+                                    lang="got"
+                                    title="Gutisk"
+                                    >𐌲𐌿𐍄𐌹𐍃𐌺</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//iu.wikipedia.org/"
+                                    lang="iu"
+                                    >ᐃᓄᒃᑎᑐᑦ / Inuktitut</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ik.wikipedia.org/"
+                                    lang="ik"
+                                    >Iñupiak</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//kl.wikipedia.org/"
+                                    lang="kl"
+                                    >Kalaallisut</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ks.wikipedia.org/"
+                                    lang="ks"
+                                    title="Kashmiri"
+                                    ><bdi dir="rtl">كشميري</bdi></a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//cr.wikipedia.org/"
+                                    lang="cr"
+                                    >Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pih.wikipedia.org/"
+                                    lang="pih"
+                                    >Norfuk / Pitkern</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//pnt.wikipedia.org/"
+                                    lang="pnt"
+                                    title="Pontiaká"
+                                    >Ποντιακά</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//dz.wikipedia.org/"
+                                    lang="dz"
+                                    title="Rdzong-Kha"
+                                    >རྫོང་ཁ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//rmy.wikipedia.org/"
+                                    lang="rmy"
+                                    >Romani</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//rn.wikipedia.org/"
+                                    lang="rn"
+                                    >Kirundi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//sg.wikipedia.org/"
+                                    lang="sg"
+                                    >Sängö</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//st.wikipedia.org/"
+                                    lang="st"
+                                    >Sesotho</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tn.wikipedia.org/"
+                                    lang="tn"
+                                    >Setswana</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//cu.wikipedia.org/"
+                                    lang="cu"
+                                    title="Slověnĭskŭ"
+                                    >Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ss.wikipedia.org/"
+                                    lang="ss"
+                                    >SiSwati</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//chr.wikipedia.org/"
+                                    lang="chr"
+                                    title="Tsalagi"
+                                    >ᏣᎳᎩ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//chy.wikipedia.org/"
+                                    lang="chy"
+                                    >Tsėhesenėstsestotse</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ve.wikipedia.org/"
+                                    lang="ve"
+                                    >Tshivenḓa</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ts.wikipedia.org/"
+                                    lang="ts"
+                                    >Xitsonga</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tum.wikipedia.org/"
+                                    lang="tum"
+                                    >chiTumbuka</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//tw.wikipedia.org/"
+                                    lang="tw"
+                                    >Twi</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//ti.wikipedia.org/"
+                                    lang="ti"
+                                    title="Təgərəña"
+                                    >ትግርኛ</a
+                                >
+                            </li>
+                            <li class="different-languages__li">
+                                <a
+                                    class="different-languages__a"
+                                    href="//nqo.wikipedia.org/"
+                                    lang="nqo"
+                                    title="N'Ko"
+                                    >ߒߞߏ</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                </section>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__linea-decorativa"></div>
+            <section class="footer__sobre-wikipedia">
+                <figure class="sobre-wikipedia__figure">
+                    <span class="sobre-wikipedia__black-icon"></span>
+                </figure>
+                <div>
+                    <p class="sobre-wikipedia__text">
+                        Wikipedia es alojada por la Fundación Wikimedia, una
+                        organización sin fines de lucro que también alberga una gama
+                        de otros proyectos.
+                    </p>
+                    <a
+                        class="sobre-wikipedia__donation"
+                        href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=AR&uselang=es&utm_medium=portal&utm_source=portalFooter&utm_campaign=portalFooter"
+                    >
+                        Usted puede apoyar nuestro trabajo con una donación.
+                    </a>
+                </div>
+            </section>
+            <section class="footer__otros-productos">
+                <a
+                    class="otros-productos-container"
+                    href="https://commons.wikimedia.org/wiki/Main_Page"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__commons
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__commons-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Commons
+                        </p>
+                        <p class="otros-productos__text">
+                            Fotos libremente ulizables y más
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikivoyage.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikiviajes
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikiviajes-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikiviajes
+                        </p>
+                        <p class="otros-productos__text">
+                            La guía de viajes libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wiktionary.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikcionario
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikcionarios-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikcionario
+                        </p>
+                        <p class="otros-productos__text">
+                            El diccionario libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikibooks.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikilibros
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikilibros-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikilibros
+                        </p>
+                        <p class="otros-productos__text">
+                            Libros de contenido libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikinews.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikinoticias
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikinoticias-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikinoticias
+                        </p>
+                        <p class="otros-productos__text">
+                            La fuente de noticias libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikidata.org/wiki/Wikidata:Main_Page"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikidata
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikidata-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikidata
+                        </p>
+                        <p class="otros-productos__text">
+                            Base de conocimiento libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikiversity.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikiversidad
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikiversidad-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikiversidad
+                        </p>
+                        <p class="otros-productos__text">
+                            Plataforma educativa libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.wikiquote.org/"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikiquote
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikiquote-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikiquote
+                        </p>
+                        <p class="otros-productos__text">
+                            La colección de citas
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://www.mediawiki.org/wiki/MediaWiki"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__mediawiki
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__mediawiki-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Mediawiki
+                        </p>
+                        <p class="otros-productos__text">
+                            Aplicación wiki libre y abierta
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://wikisource.org/wiki/Main_Page"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikisource
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikisource-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikisource
+                        </p>
+                        <p class="otros-productos__text">La biblioteca libre</p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://species.wikimedia.org/wiki/Main_Page"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__wikispecies
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__wikispecies-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Wikispecies
+                        </p>
+                        <p class="otros-productos__text">
+                            Directorio de especies libre
+                        </p>
+                    </div>
+                </a>
+                <a
+                    class="otros-productos-container"
+                    href="https://meta.wikimedia.org/wiki/Main_Page"
+                >
+                    <figure
+                        class="
+                            otros-productos__figure-icons
+                            otros-productos__metawiki
+                        "
+                    >
+                        <span
+                            class="
+                                otros-productos__icon
+                                otros-productos__metawiki-icon
+                            "
+                        ></span>
+                    </figure>
+                    <div class="otros-productos__texts">
+                        <p
+                            class="
+                                otros-productos__text
+                                otros-productos__text--blue
+                            "
+                        >
+                            Meta-Wiki
+                        </p>
+                        <p class="otros-productos__text">
+                            Coordinación y documentación comunitaria
+                        </p>
+                    </div>
+                </a>
+            </section>
+            <section class="footer__download-app">
+                <div class="footer__w-is-for-wikipedia">
+                    <span class="w-is-for-wikipedia__icon"></span>
+                    <p class="w-is-for-wikipedia__text">
+                        Descarga Wikipedia para Android o iOS
+                    </p>
+                </div>
+                    <p class="download-app__text">
+                        Guarda tus artículos favoritos para leerlos sin conexión,
+                        sincroniza tus listas de lectura en varios dispositivos y
+                        personaliza tu experiencia de lectura con la aplicación
+                        oficial de Wikipedia.
+                    </p>
+                    <div class="download-app__two-so">
+                        <figure class="google-play">
+                            <span class="google-play__icon"></span>
+                        </figure>
+                        <figure class="apple-store">
+                            <span class="apple-store__icon"></span>
+                        </figure>
+                    </div>
+                    <div class="download-app__vacio"></div>
+            </section>
+            <div class="footer__linea-decorativa footer__linea-decorativa2"></div>
+            <section class="footer__terminos-y-condiciones">
+                <p class="terminos-y-condiciones__text-p">
+                    Esta página está disponible bajo la
+                    <a
+                        class="terminos-y-condiciones__text-a"
+                        href="https://creativecommons.org/licenses/by-sa/3.0/"
+                        >licencia Creative Commons Atribución-Compartirlgual</a
+                    >
+                    •
+                    <a
+                        class="terminos-y-condiciones__text-a"
+                        href="https://meta.wikimedia.org/wiki/Terms_of_use/es"
+                        >Términos de uso</a
+                    >
+                    •
+                    <a
+                        class="terminos-y-condiciones__text-a"
+                        href="https://meta.wikimedia.org/wiki/Privacy_policy/es"
+                        >Normariva de privacidad</a
+                    >
+                </p>
+            </section>
+        </footer>
     </body>
 </html>
