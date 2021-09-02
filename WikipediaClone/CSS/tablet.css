@@ -1,0 +1,240 @@
+.header__wikipedia-logo {
+    display: none;
+}
+
+.header__wikipedia-container-titles {
+    margin: 3rem 0 0;
+}
+
+.header__wikipedia-title {
+    width: 17.6rem;
+    height: 3.2rem;
+}
+
+.wikipedia-title__span {
+    background-position: 0 -254px;
+}
+
+.header__wikipedia-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main__seccion-de-busqueda {
+    order: 1;
+}
+
+.main__all-languajes {
+    order: 2;
+}
+
+.main__languaje-wikipedia {
+    display: block;
+    grid-template: 1fr / 1fr;
+    /* text-align: center; */
+    position: relative;
+    flex-direction: column;
+    width: 54.5rem;
+    height: 32.5rem;
+    margin: 0 auto;
+}
+
+.languaje-wikipedia__wikipedia-logo {
+    position: absolute;
+    display: inline-block;
+    width: 20rem;
+    height: 18.3rem;
+    top: 7.1rem;
+    left: 17.2rem;
+}
+
+.single-languaje {
+    position: absolute;
+}
+
+.espanol-languaje {
+    top: 0;
+    right: 60%;
+}
+
+.english-languaje {
+    top: 0;
+    left: 60%;
+}
+
+.japanese-languaje {
+    top: 20%;
+    right: 70%;
+}
+
+.deutsch-languaje {
+    top: 20%;
+    left: 70%;
+}
+
+.russian-languaje {
+    top: 40%;
+    right: 72%;
+}
+
+.french-languaje {
+    top: 40%;
+    left: 72%;
+}
+
+.chinese-languaje {
+    top: 60%;
+    right: 70%;
+}
+
+.italian-languaje {
+    top: 60%;
+    left: 70%;
+}
+
+.portuguese-languaje {
+    top: 80%;
+    right: 60%;
+}
+
+.polski-languaje {
+    top: 80%;
+    left: 60%;
+}
+
+.single-languaje__h3 {
+    font-size: 1.6rem;
+}
+
+.single-languaje__p {
+    display: none;
+}
+
+.single-languaje__p--mw800px {
+    display: initial;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 13rem auto auto auto;
+    grid-template-areas:
+        "linea-decorariva linea-decorariva"
+        "sobre-wikipedia otros-productos"
+        "download-app otros-productos"
+        "linea-decorariva2 linea-decorariva2"
+        "terminos-y-condiciones terminos-y-condiciones";
+    margin: 0 auto;
+    padding: 1.3rem;
+}
+
+.footer__linea-decorativa {
+    grid-area: linea-decorariva;
+    margin-bottom: 5rem;
+}
+.footer__linea-decorativa2 {
+    grid-area: linea-decorariva2;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+.footer__download-app {
+    grid-area: download-app;
+    width: 19.1rem;
+    margin: 0 auto;
+}
+
+.footer__otros-productos {
+    grid-area: otros-productos;
+}
+
+.footer__terminos-y-condiciones {
+    grid-area: terminos-y-condiciones;
+    width: 100%;
+}
+
+.footer__sobre-wikipedia {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.2rem;
+    width: 100%;
+    /* height: 115px; */
+    /* align-items: center; */
+    /* grid-template-areas:
+        "sobre-wikipedia__figure sobre-wikipedia__text"
+        "sobre-wikipedia__figure sobre-wikipedia__donation"; */
+}
+
+.sobre-wikipedia__figure {
+    /* align-self: flex-start; */
+    /* margin-top: 25px; */
+}
+
+.footer__download-app {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "w-is-for-wikipedia w-is-for-wikipedia"
+        "download-app__vacio download-app__text"
+        "download-app__vacio download-app__two-so";
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.footer__w-is-for-wikipedia {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-area: w-is-for-wikipedia;
+    justify-content: initial;
+}
+
+.w-is-for-wikipedia__icon {
+    justify-self: center;
+    transform: scale(1);
+}
+
+.w-is-for-wikipedia__text {
+    /* align-self: center; */
+    /* margin: 0; */
+}
+
+.download-app__text {
+    text-align: start;
+    grid-area: download-app__text;
+    margin: 0;
+}
+
+.download-app__two-so {
+    grid-area: download-app__two-so;
+    align-self: center;
+}
+
+.download-app__vacio {
+    grid-area: download-app__vacio;
+    width: 8rem;
+    height: 1px;
+}
+
+.sobre-wikipedia__text {
+    text-align: start;
+}
+
+.sobre-wikipedia__donation {
+    text-align: start;
+}
+/* .xd {
+    position: initial;
+    width: 20rem;
+    height: 18.3rem;
+    margin: 0 auto;
+    justify-self: center;
+    align-items: center;
+} */
