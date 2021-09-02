@@ -538,7 +538,7 @@ img {
 
 .footer__download-app{
     background-color: var(--background-color-download-app);
-    padding-top: 1rem;
+    padding: 1rem;
     margin-top: 1rem;
 }
 
